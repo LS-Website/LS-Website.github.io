@@ -12,14 +12,6 @@
 	<meta name="description" content="LiquidSmooth is an aftermarket firmware based on the Android Open Source Project. Dedicated to providing users with smooth, stable ROMs. A Lightweight modified AOSP base, and then add the features you crave! ">
 	<meta name="keywords" content="Liquid Smooth, Liquidsmooth, ROM, AOSP, custom rom">
 
-   	 <script>
-    	   // Service workers require HTTPS (http://goo.gl/lq4gCo). If we're running on a real web server
- 	   // (as opposed to localhost on a custom port, which is whitelisted), then change the protocol to HTTPS.
-   	   if ((!location.port || location.port == "80") && location.protocol != 'https:') {
-   	   location.protocol = 'https:';
-     	   }
-         </script>
-
 	<!-- css -->
 	<link href="/css/base.min.css" rel="stylesheet">
 	<link href="/css/fonts.css" rel="stylesheet">
@@ -49,7 +41,7 @@
 					</a>
 				</li>
 			</ul>
-		<p class="header-logo">LiquidSmooth</p>		</div>
+		<p class="header-logo">LiquidSmooth - Offline Mode</p>		</div>
 	</header>
 	
 	<!-- End of Header -->
@@ -107,7 +99,7 @@
 						Dedicated to providing users with smooth, stable ROMs. A Lightweight modified AOSP base, and then add the features you crave!
 						While we make every effort to test these builds as much as possible, we are not responsible for anything that may happen to your device.
 						Features are added all the time, so check out our source code and keep up with us on Google Plus.
-						We ask that you do your part to know your device and know how to recover from problems before you flash! <a id="reload">offline test</a></p>
+						We ask that you do your part to know your device and know how to recover from problems before you flash!</p>
 						</div>
 						</div>
 						
@@ -207,13 +199,6 @@
 	<!-- JavaScript -->
 	
 	<script>
-		var cacheBustedUrl = 'index.html?cache-bust=' + Date.now();
-      		document.querySelector('#reload').href = cacheBustedUrl;
-
-      		if ('serviceWorker' in navigator) {
-        	navigator.serviceWorker.register('service-worker.js', {scope: './'});
-      		}
-
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
